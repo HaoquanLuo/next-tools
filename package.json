@@ -3,10 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "concurrently pnpm:dev:*",
+    "build": "concurrently pnpm:build:*",
+    "dev:dev": "next dev -p 3001",
+    "build:build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "dev:css": "unocss -c uno.config.ts -o app/uno.css -w \"{app,components,common}/**/*.{ts,tsx}\"",
+    "build:css": "unocss -c uno.config.ts -o app/uno.css \"{app,components,common}/**/*.{ts,tsx}\""
   },
   "dependencies": {
     "@types/node": "18.15.11",
@@ -18,5 +22,10 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "5.0.4"
+  },
+  "devDependencies": {
+    "@unocss/cli": "^0.51.4",
+    "concurrently": "^8.0.1",
+    "unocss": "^0.51.4"
   }
 }
