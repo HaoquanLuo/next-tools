@@ -13,21 +13,23 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
-      <footer>
-        Made with 💞 by
-        <span>
-          <a href={'https://github.com/ffxixslh'} target="_blank">
-            ffxixslh🤓
-          </a>
-        </span>
-        &
-        <span>
-          <a href={'https://www.anthropic.com/product'} target="_blank">
-            Claude🤖
-          </a>
-        </span>
-      </footer>
+      <body>
+        {children}
+        <footer>
+          Made with 💞 by
+          <span>
+            <a href={'https://github.com/ffxixslh'} target="_blank">
+              ffxixslh🤓
+            </a>
+          </span>
+          &
+          <span>
+            <a href={'https://www.anthropic.com/product'} target="_blank">
+              Claude🤖
+            </a>
+          </span>
+        </footer>
+      </body>
     </html>
   )
 }
