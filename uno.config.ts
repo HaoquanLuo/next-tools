@@ -39,5 +39,4 @@ export default defineConfig({
     activeBottom: 'active before:bottom--2 before:w-full before:h-0.75',
     bgHighlight: 'hover:bg-light hover:bg-op-20',
   },
-  safelist: ['w-12', 'w-10', 'h-10', 'text-3xl'],
 })
