@@ -7,7 +7,7 @@
 .ic{align-items:center;}
 .pic{place-items:center;}
 /* layer: default */
-.p-1\.5{padding:0.375rem;}
+.p-1{padding:0.25rem;}
 .b-1{border-width:1px;}
 .b-2{border-width:2px;}
 .b-dark{--un-border-opacity:1;border-color:rgba(34,34,34,var(--un-border-opacity));}

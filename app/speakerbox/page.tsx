@@ -15,7 +15,7 @@ interface PageSpeakerBoxProps {}
 const PageSpeakerBox: React.FC<PageSpeakerBoxProps> = () => {
   // hooks
   const selectRef = useRef<HTMLSelectElement>(null)
-  const [text, setText] = useState('你好，我是 SpeakerBox')
+  const [text, setText] = useState('')
   const [utteranceSettings, setUtteranceSettings] = useState<UtteranceSettings>(
     {
       lang: 'zh-CN',
@@ -98,15 +98,19 @@ const PageSpeakerBox: React.FC<PageSpeakerBoxProps> = () => {
         <div className={'flex flex-col gap-1'}>
           <div className={'full'}>
             <textarea
-              className={'w-full! h-100 resize-none p-1.5 text-base'}
+              className={'w-full! h-100 resize-none p-1 text-base'}
               value={text}
+              placeholder={'输入文本即可开始朗读'}
               onChange={(e) => setText(e.target.value)}
             />
           </div>
           <div></div>
         </div>
         <div className={'flex jc'}>
-          <button onClick={handleSpeak} disabled={isSpeaking}>
+          <button
+            onClick={handleSpeak}
+            disabled={text.length === 0 || isSpeaking}
+          >
             {isSpeaking ? '朗读中...' : '朗读'}
           </button>
         </div>

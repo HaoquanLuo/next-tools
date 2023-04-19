@@ -96,9 +96,23 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+  padding: 1rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  vertical-align: bottom;
+}
+
 a {
   color: inherit;
   text-decoration: none;
+}
+
+span {
+  padding: 0 0.25rem;
 }
 
 @media (prefers-color-scheme: dark) {
