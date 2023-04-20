@@ -26,7 +26,7 @@ const PageSpeakerBox: React.FC<PageSpeakerBoxProps> = () => {
     }
   )
   const [voiceList, setVoiceList] = useState<SpeechSynthesisVoice[]>([])
-  const [isSpeaking, setIsSpeaking] = useState(false)
+  const [isSpeaking, setIsSpeaking] = useState<boolean>(false)
   // other handles
   const synth = window.speechSynthesis
   // effects
