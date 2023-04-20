@@ -18,8 +18,7 @@
 .text-xl{font-size:1.25rem;line-height:1.75rem;}
 .font-500{font-weight:500;}
 .font-600{font-weight:600;}
-.text-light{--un-text-opacity:1;color:rgba(246,246,246,var(--un-text-opacity));}
-.text-op-60{--un-text-opacity:0.6;}
+.text-op-30{--un-text-opacity:0.3;}
 .flex{display:flex;}
 .flex-col{flex-direction:column;}
 .grid{display:grid;}
