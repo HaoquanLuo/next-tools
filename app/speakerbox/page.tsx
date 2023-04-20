@@ -1,6 +1,14 @@
 import React from 'react'
-import SpeakerBox from '@/components/SpeakerBox'
+import dynamic from 'next/dynamic'
+
+import LoadingBox from '@/components/expection/LoadingBox'
+
 interface PageSpeakerBoxProps {}
+
+const SpeakerBox = dynamic(() => import('@/components/common/SpeakerBox'), {
+  loading: () => <LoadingBox />,
+  ssr: false,
+})
 
 const PageSpeakerBox: React.FC<PageSpeakerBoxProps> = () => {
   return (
