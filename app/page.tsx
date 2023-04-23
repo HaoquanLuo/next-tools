@@ -12,7 +12,7 @@ export default function Home() {
           <Link href={'/speakerbox'}>
             <div className={styles.card}>
               <div className={'text-2xl font-600'}>SpeakerBox</div>
-              <p>文字转语音工具</p>
+              <p>文字朗读工具</p>
             </div>
           </Link>
           <Link href={'/'}>

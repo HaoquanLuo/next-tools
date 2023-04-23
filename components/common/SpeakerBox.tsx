@@ -86,7 +86,7 @@ const SpeakerBox: React.FC<SpeakerBoxProps> = () => {
           <div className={'text-sm text-op-30'}>文本朗读</div>
         </div>
         <div className={'b-1 flex ic gap-2'}>
-          <div className={'v-bottom'}>语音</div>
+          <div className={'v-bottom'}>语言</div>
           <select
             ref={selectRef}
             className={'w-80'}
