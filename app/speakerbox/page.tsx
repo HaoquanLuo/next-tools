@@ -1,7 +1,7 @@
 import React from 'react'
 import dynamic from 'next/dynamic'
 
-import LoadingBox from '@/components/expection/LoadingBox'
+import LoadingBox from '@/components/exception/LoadingBox'
 
 interface PageSpeakerBoxProps {}
 
